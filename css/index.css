@@ -1,103 +1,112 @@
-*{
+* {
 	box-sizing: border-box;
- }
-
-body{
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	font-size: 14px;
 }
 
-header{
-	background-color: #333;
+body {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background-color: #24292e;
+}
+
+header {
+	background-color: #24292e;
 	height: 3em;
-	color: #FFF;
+	color: #dbedff;
 	margin-bottom: 1em;
 }
 
-header h1{
+header h1 {
 	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
+	display: inline-block;
+	vertical-align: middle;
 }
-header h2{
+header h2 {
 	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
+	display: inline-block;
+	vertical-align: middle;
 }
 
-header .container:before{
-	content: '';
-	display:inline-block;
+header .container:before {
+	content: "";
+	display: inline-block;
 	height: 100%;
-	vertical-align:	middle;
+	vertical-align: middle;
 }
 
-.container{
+h2 {
+	color: #dbedff;
+}
+
+.container {
 	width: 60%;
 	height: 100%;
 	margin: 0 auto;
 }
 
-section{
+section {
 	margin: 2em 0;
 	overflow: hidden;
 }
 
-section h2{
+section h2 {
 	font-size: 3em;
 	display: block;
-	padding-bottom: .5em;
-	border-bottom: 1px solid #ccc;
-	margin-bottom: .5em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #dbedff;
+	margin-bottom: 0.5em;
 }
 
-table{
+table {
 	width: 100%;
-	margin-bottom : .5em;
-    table-layout: fixed;
-
+	margin-bottom: 0.5em;
+	table-layout: fixed;
 }
 
-td, th {
-	padding: .7em;
+td {
+	color: #ccc;
+}
+
+td,
+th {
+	padding: 0.7em;
 	margin: 0;
-	border: 1px solid #ccc;
+	border: 1px solid #dbedff;
 	text-align: center;
 }
 
-th{
+th {
 	font-weight: bold;
-	background-color: #EEE;
+	background-color: #dbedff;
 }
 
-label{
-	color: #555;
+label {
+	color: #dbedff;
 	display: block;
-	margin-bottom: .2em;
+	margin-bottom: 0.2em;
 }
 
-.campo{
+.campo {
 	margin: 0;
 	padding-bottom: 1em;
 	width: 100%;
 	border: 1px solid #ccc;
-	padding: .7em;
+	padding: 0.7em;
 	width: 100%;
 }
 
-.campo-medio{
+.campo-medio {
 	display: inline-block;
-	padding-right: .5em;
+	padding-right: 0.5em;
 }
 
-.grupo{
+.grupo {
 	width: 32%;
 	display: inline-block;
 	padding: 10px 0px;
 }
 
-button{
-	padding: .5em 2em;
+button {
+	padding: 0.5em 2em;
 	border: 0;
 	border-bottom: 3px solid;
 	font-size: 1.2em;
@@ -105,34 +114,48 @@ button{
 	margin: 0;
 	margin-top: -3px;
 	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
+	background-color: #6c21fd;
+	border-color: #dbedff;
 	width: 20%;
-    display: block;
-    clear: both;
-    margin: 10px 0px;
-
+	display: block;
+	clear: both;
+	margin: 10px 0px;
 }
 
-button:active{
-	margin-top:0px;
+button:active {
+	margin-top: 0px;
 	border: 0;
 }
 
-button[disabled=disabled], button:disabled {
-    background-color: gray;
-	border-color: darkgray;
-
+button[disabled="disabled"],
+button:disabled {
+	background-color: #6c21fd;
+	border-color: #6c21fd;
 }
 
-.adicionar-paciente{
-    margin-top: 30px;
+.adicionar-paciente {
+	margin-top: 30px;
 }
 
-.campo-invalido{
+.campo-invalido {
 	border: 1px solid red;
 }
 
-.paciente-invalido{
+.paciente-invalido {
 	background-color: lightblue;
+}
+
+#mensagens-erro {
+	color: red;
+}
+
+.fadeout {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela {
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
 }

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
   <title>Aparecida Nutrição</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -20,6 +21,9 @@
   <main>
     <section class="container">
       <h2>Meus pacientes</h2>
+      <label for="filtar-tabela">filtre:</label>
+      <input type="text" name="filtro" id="filtrar-tabela" 
+      placeholder="Digite o nome do paciente">
       <table>
         <thead>
           <tr>
@@ -76,6 +80,9 @@
   </main>
   <section class="container">
     <h2 id="titulo-form">Adicionar novo paciente</h2>
+    <ul id="mensagens-erro">
+
+    </ul> 
     <form id="form-adiciona">
       <div class="">
         <label for="nome">Nome:</label>
@@ -99,6 +106,10 @@
 
     <script src="js/calculaIMC.js"></script>
     <script src="js/form.js"></script>
-</body>
+    <script src="js/remover-paciente.js"></script>
+    <script src="js/validate-form.js"></script>
+    <script src="js/filtra.js"></script>
+</body>ipt>
+    
 
 </html>
